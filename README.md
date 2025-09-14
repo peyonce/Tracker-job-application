@@ -41,5 +41,5 @@ A **React + TypeScript web app** to track job applications. Users can register, 
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
