@@ -1,15 +1,42 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LandingPage from "./pages/Landing";
+// App.tsx
+// src/App.tsx
 
-function App() {
+import React from "react";
+import { BrowserRouter, Routes, Route, } from "react-router-dom";
+
+// Import your context and protected route component
+
+// Import your page components
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Home from "./pages/Home";
+import Landing from "./pages/Landing";
+import ProtectedRoute from "./components/ProtectedRoute";
+
+const App: React.FC = () => {
   return (
-    <Router>
+
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        {/* Public / Non-authenticated routes */}
+        <Route path="/" element={< Landing />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+
+        {/* Protected routes - only accessible when logged in */}
+        <Route
+          path="/home"
+          element={
+            <ProtectedRoute isAuthenticated>
+              <Home />
+            </ProtectedRoute>
+          }
+        />
 
       </Routes>
-    </Router>
+    </BrowserRouter>
+
   );
-}
+};
 
 export default App;
