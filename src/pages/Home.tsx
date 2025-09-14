@@ -88,7 +88,7 @@ export default function Home() {
                     onChange={(e) => setCompany(e.target.value)}
                 />
                 <button className={styles.addButton} onClick={addJob}>
-                    Add Job
+                    Add
                 </button>
             </div>
 

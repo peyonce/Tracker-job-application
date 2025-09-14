@@ -4,13 +4,33 @@
       "id": "88fc",
       "username": "nthabynthabie1@gmail.com",
       "password": "Khaya@23"
+    },
+    {
+      "id": "39d3",
+      "username": "nthabynthabie3@gmail.com",
+      "password": "Khaya@23"
+    },
+    {
+      "id": "96f5",
+      "username": "tin",
+      "password": "234"
+    },
+    {
+      "id": "91cf",
+      "username": "prince",
+      "password": "789"
+    },
+    {
+      "id": "0151",
+      "username": "tsaki",
+      "password": "133"
     }
   ],
   "jobs": [
     {
-      "id": "282f",
-      "title": "baker",
-      "company": "pinky"
+      "id": "9990",
+      "title": "creams",
+      "company": "don"
     }
   ]
 }

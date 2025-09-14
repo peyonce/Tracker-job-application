@@ -19,11 +19,13 @@
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
 }
 
+
 .title {
   font-size: 2rem;
   color: #00f0ff;
   margin-bottom: 20px;
 }
+
 
 .form {
   display: flex;
@@ -45,22 +47,49 @@
   font-size: 1rem;
 }
 
-.loginBtn {
-  margin-top: 10px;
-  padding: 12px;
+
+.btn {
+  padding: 12px 20px;
   border: none;
   border-radius: 25px;
-  background: linear-gradient(135deg, #00f0ff, #0088cc);
-  color: white;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  color: white;
+  font-size: 1rem;
+  margin-top: 10px;
+  width: 100%;
 }
 
-.loginBtn:hover {
+
+.btnadd {
+  background: linear-gradient(135deg, #00f0ff, #0088cc);
+}
+
+.btnadd:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
 }
+
+
+.btnEdit {
+  background: linear-gradient(135deg, #ffbb33, #ff8800);
+}
+
+.btnEdit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.btndelete {
+  background: linear-gradient(135deg, #ff3b3b, #cc0000);
+}
+
+.btndelele:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
 
 .registerText {
   margin-top: 15px;
@@ -71,4 +100,41 @@
   color: #00ffcc;
   font-weight: 600;
   cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    padding: 30px 20px;
+    max-width: 90%;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .input {
+    font-size: 0.95rem;
+    padding: 8px 12px;
+  }
+
+  .btn {
+    font-size: 0.95rem;
+    padding: 10px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 20px 15px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
 }

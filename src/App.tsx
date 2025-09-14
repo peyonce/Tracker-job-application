@@ -1,16 +1,10 @@
-// App.tsx
-// src/App.tsx
-
 import React from "react";
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
-
-// Import your context and protected route component
-
-// Import your page components
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Home from "./pages/Home";
 import Landing from "./pages/Landing";
+import NotFound from "./pages/NotFound";
 import ProtectedRoute from "./components/ProtectedRoute";
 
 const App: React.FC = () => {
@@ -18,12 +12,12 @@ const App: React.FC = () => {
 
     <BrowserRouter>
       <Routes>
-        {/* Public / Non-authenticated routes */}
+
         <Route path="/" element={< Landing />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
 
-        {/* Protected routes - only accessible when logged in */}
+
         <Route
           path="/home"
           element={
@@ -33,6 +27,8 @@ const App: React.FC = () => {
           }
         />
 
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
 
