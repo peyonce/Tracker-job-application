@@ -33,7 +33,7 @@ A **React + TypeScript web app** to track job applications. Users can register, 
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - **Frontend:** React, TypeScript, CSS Modules  
 - **Routing:** React Router DOM  
