@@ -29,18 +29,17 @@
       "id": "20b9",
       "username": "net",
       "password": "789"
-    }
-  ],
-  "jobs": [
-    {
-      "id": "9990",
-      "title": "creams",
-      "company": "don"
     },
     {
-      "id": "cf26",
-      "title": "koo",
-      "company": "sty"
+      "id": "dffa",
+      "username": "fikile mtolo",
+      "password": "123"
+    },
+    {
+      "id": "fd2d",
+      "username": "lint love",
+      "password": "234"
     }
-  ]
+  ],
+  "jobs": []
 }

@@ -1,131 +1,128 @@
- @keyframes gradientMove {
-     0% {
-         background-position: 0% 50%;
-     }
+  @keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
 
-     50% {
-         background-position: 100% 50%;
-     }
+    50% {
+        background-position: 100% 50%;
+    }
 
-     100% {
-         background-position: 0% 50%;
-     }
- }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
- .container {
-     min-height: 100vh;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #0f2027);
-     background-size: 400% 400%;
-     animation: gradientMove 15s ease infinite;
-     padding: 20px;
-     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
- }
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: 
+        url('path_to_your_image.jpg') no-repeat center center fixed, 
+        linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #0f2027); /* Background image with gradient overlay */
+    background-size: cover;
+    background-position: center;
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+    padding: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
 
+.card {
+    background: rgba(0, 50, 70, 0.3);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 50px 40px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    max-width: 500px;
+    width: 100%;
+    animation: fadeIn 1s ease forwards;
+}
 
- .card {
-     background: rgba(0, 50, 70, 0.3);
-     backdrop-filter: blur(15px);
-     border-radius: 25px;
-     padding: 50px 40px;
-     text-align: center;
-     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-     max-width: 500px;
-     width: 100%;
-     animation: fadeIn 1s ease forwards;
- }
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #a0f7ff;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
 
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #c0e8ef;
+    line-height: 1.6;
+}
 
- .title {
-     font-size: 3rem;
-     font-weight: 700;
-     margin-bottom: 20px;
-     color: #a0f7ff;
-     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
- }
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
+.loginBtn,
+.registerBtn {
+    padding: 14px 32px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
 
- .description {
-     font-size: 1.2rem;
-     margin-bottom: 40px;
-     color: #c0e8ef;
-     line-height: 1.6;
- }
+.loginBtn {
+    background: linear-gradient(135deg, #00f0ff, #0088cc);
+    color: #fff;
+}
 
+.loginBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
 
- .buttons {
-     display: flex;
-     justify-content: center;
-     gap: 20px;
-     flex-wrap: wrap;
- }
+.registerBtn {
+    background: linear-gradient(135deg, #00ffcc, #008080);
+    color: #fff;
+}
 
- .loginBtn,
- .registerBtn {
-     padding: 14px 32px;
-     border-radius: 30px;
-     font-weight: 600;
-     font-size: 1rem;
-     cursor: pointer;
-     border: none;
-     transition: all 0.3s ease;
-     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
- }
+.registerBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
 
+@media (max-width: 768px) {
+    .card {
+        padding: 40px 20px;
+    }
 
- .loginBtn {
-     background: linear-gradient(135deg, #00f0ff, #0088cc);
-     color: #fff;
- }
+    .title {
+        font-size: 2.2rem;
+    }
 
- .loginBtn:hover {
-     transform: translateY(-3px);
-     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
- }
+    .description {
+        font-size: 1rem;
+    }
 
+    .loginBtn,
+    .registerBtn {
+        width: 100%;
+        max-width: 200px;
+    }
+}
 
- .registerBtn {
-     background: linear-gradient(135deg, #00ffcc, #008080);
-     color: #fff;
- }
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
 
- .registerBtn:hover {
-     transform: translateY(-3px);
-     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
- }
-
-
- @media (max-width: 768px) {
-     .card {
-         padding: 40px 20px;
-     }
-
-     .title {
-         font-size: 2.2rem;
-     }
-
-     .description {
-         font-size: 1rem;
-     }
-
-     .loginBtn,
-     .registerBtn {
-         width: 100%;
-         max-width: 200px;
-     }
- }
-
-
- @keyframes fadeIn {
-     0% {
-         opacity: 0;
-         transform: translateY(-20px);
-     }
-
-     100% {
-         opacity: 1;
-         transform: translateY(0);
-     }
- }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
