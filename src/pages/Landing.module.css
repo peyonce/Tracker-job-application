@@ -19,7 +19,7 @@
     align-items: center;
     background: 
         url('path_to_your_image.jpg') no-repeat center center fixed, 
-        linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #0f2027); /* Background image with gradient overlay */
+        linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #0f2027);  
     background-size: cover;
     background-position: center;
     background-size: 400% 400%;
